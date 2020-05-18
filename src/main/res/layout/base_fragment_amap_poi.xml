@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/poiMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <ImageView
+        android:id="@+id/marker"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/base_icon_location_marker" />
+
+    <ImageButton
+        android:id="@+id/base_fa_user_location"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="148dp"
+        android:background="@drawable/base_white_oval"
+        android:elevation="4dp"
+        android:src="@mipmap/base_icon_button_location" />
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_sheet_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@drawable/base_view_map_bottom_container"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:translationZ="8dp"
+        app:behavior_peekHeight="136dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <ImageView
+            android:id="@+id/iv_base_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="center"
+            android:src="@mipmap/base_icon_arrow_up" />
+
+        <EditText
+            android:id="@+id/edt_base_map_poi_search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/iv_base_arrow"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/view_search_map_edt"
+            android:drawableLeft="@mipmap/base_icon_search"
+            android:drawablePadding="8dp"
+            android:hint="查询地点"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/black_35"
+            android:textColorHint="@color/black_35"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/poi_map_poiInfo_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@id/edt_base_map_poi_search"
+            android:layout_toLeftOf="@id/poi_map_poiInfo_commit_tv"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="正在搜索"
+            android:textColor="@color/black_35"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/poi_map_poiInfo_add_tv"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_below="@id/poi_map_poiInfo_name_tv"
+            android:layout_toLeftOf="@id/poi_map_poiInfo_commit_tv"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/black_35"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/poi_map_poiInfo_commit_tv"
+            android:layout_width="72dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/edt_base_map_poi_search"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/view_click_status"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/base_search_poi_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/poi_map_poiInfo_commit_tv"
+            android:descendantFocusability="blocksDescendants" />
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

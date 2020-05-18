@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#46CC5E</color>
+    <color name="colorPrimaryDark">#46CC5E</color>
+    <color name="colorAccent">#46CC5E</color>
+    <color name="orange">#FA5738</color>
+    <color name="colorPrimaryPressed">#1A8B2F</color>
+    <color name="black">#000</color>
+    <color name="black_35">#353535</color>
+    <color name="grey_a">#AAA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey_e">#EEEEEE</color>
+    <color name="textGray">#666666</color>
+    <color name="grey_8">#888</color>
+    <color name="green">#54DB6B</color>
+    <color name="line_down_sky">#4DB0D0</color>
+    <!-- RoutePlanSuite-->
+    <color name="route_plan_suite_2">#FF7979</color>
+
+    <color name="red">#FF3B30</color>
+
+    <color name="contents_text">#000000</color>
+    <color name="encode_view">#ffffff</color>
+    <color name="possible_result_points">#ffbd21</color>
+    <color name="result_minor_text">#c0c0c0</color>
+    <color name="result_points">#99cc00</color>
+    <color name="result_text">#ffffff</color>
+    <color name="result_view">#000000</color>
+    <color name="status_text">#ffffff</color>
+    <color name="viewfinder_mask">#50000000</color>
+    <color name="react">#ffffff</color>
+    <color name="scanLineColor">#ffffff</color>
+    <color name="defaultColor">#ffffff</color>
+</resources>
